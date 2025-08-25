@@ -57,9 +57,11 @@ header {
   align-items: center;
   gap: 20px;         /* 👈 separación entre cada ícono */
   margin-right: 20px;/* opcional, para alejarlos un poco del borde derecho */
+  color: white;
 }
 
 .iconosderecha svg {
+  fill: white !important;
   cursor: pointer;   /* hace que parezcan clickeables */
   transition: transform 0.2s ease;
 }
