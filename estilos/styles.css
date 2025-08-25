@@ -1,0 +1,383 @@
+header {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.atencion {
+    text-align: center;
+    font-size: 0.9rem;
+    font-weight: bold;
+    background-color: white;
+    padding: 5px 0;
+    line-height: normal;
+}
+
+#logo {
+  height: 80px;            /* probá con 80px o el tamaño que quieras */
+  width: auto;             /* mantiene proporción */
+  display: block;          /* evita espacio debajo de la imagen */
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* separación entre logo y texto */
+}
+
+.marca {
+  font-size: 28px;   /* tamaño del nombre */
+  font-weight: bold; /* negrita */
+  color: white;      /* color del texto */
+}
+
+.busqueda {
+  display: flex;
+  align-items: center;
+  background: white;        /* fondo blanco para diferenciar */
+  border-radius: 8px;       /* bordes redondeados */
+  padding: 5px 10px;
+}
+
+.busqueda svg {
+  fill: black;              /* color de la lupa */
+  margin-right: 8px;        /* separación entre la lupa y el input */
+}
+
+.busqueda input {
+  width: 100%;
+  max-width: 500px;  
+  height: 30px;             /* altura */
+  border: none;             /* sacamos borde feo */
+  outline: none;            /* sacamos borde azul al hacer clic */
+  font-size: 16px;          /* tamaño del texto */
+}
+
+.iconosderecha {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;         /* 👈 separación entre cada ícono */
+  margin-right: 20px;/* opcional, para alejarlos un poco del borde derecho */
+}
+
+.iconosderecha svg {
+  cursor: pointer;   /* hace que parezcan clickeables */
+  transition: transform 0.2s ease;
+}
+
+.iconosderecha svg:hover {
+  transform: scale(1.2); /* efecto al pasar el mouse */
+}
+
+header a{
+    color: white;
+    text-decoration: none;
+}
+
+header div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5px;
+    padding: 2px;
+}
+
+header {
+    background-color: black;
+    min-height: 150px;
+}
+
+header ul{
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 10px;
+}
+
+nav {
+    text-align: center;
+    border: 2px solid white;
+}
+
+h1 {
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  font-size: 2.5rem;
+  margin: 0;
+  padding: 20px;
+  color: white;
+  background-color: black; /* ocupa todo el ancho */
+}
+
+h2 {
+    background-color: rgb(203, 167, 155);
+}
+
+
+
+form {
+    text-align: center;
+}
+
+li {
+    list-style-type: none;
+}
+
+a { 
+    font-size: 1.2rem;
+}
+
+.carousel {
+    width: 100%;
+    max-width: 1400px;
+    overflow: hidden;
+    position: relative;
+    margin: auto;
+    background-color: black;
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-track img {
+  width: 100%;
+  max-width: 1400px;
+  height: auto;
+  flex-shrink: 0;
+}
+
+.carousel-control {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  font-size: 24px;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.carousel-control.prev {
+  left: 10px;
+}
+
+.carousel-control.next {
+  right: 10px;
+}
+
+.info-bar {
+  width: 100%;                 /* ocupa todo el ancho de la página */
+  background-color: black;      /* color de fondo */
+  display: flex;                /* flexbox para alinear los ítems */
+  justify-content: space-around;/* espacio entre los ítems */
+  align-items: center;          /* centra verticalmente */
+  padding: 20px 0;              /* espacio arriba y abajo */
+}
+
+.info-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;                    /* espacio entre ícono y texto */
+  color: white;                  /* texto blanco */
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+}
+
+.info-item svg {
+  fill: white;                   /* color de los íconos */
+}
+
+.cards-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap; /* para que se acomoden si no entran en una fila */
+  margin: 20px;
+}
+
+.card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+  overflow: hidden;
+  width: 100%;
+  max-width: 250px;
+  text-align: center;
+  transition: transform 0.2s ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover; /* recorta la imagen para que quede prolija */
+}
+
+.card-info {
+  padding: 15px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.card-info h3 {
+  font-size: 1.2rem;
+  margin: 10px 0;
+}
+
+.card-info p {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.precio {
+  display: block;
+  margin-top: 8px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #e63946; /* un rojo elegante para resaltar el precio */
+}
+
+.bienvenidos {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.3rem;     /* más grande */
+  text-align: center;   /* centrado */
+  margin: 20px auto 40px;
+  max-width: 800px;     /* limita el ancho para que no se estire demasiado */
+  line-height: 1.6;     /* más aire entre líneas */
+  color: #444;
+}
+
+.video-section {
+  flex-wrap: wrap;
+  display: flex;              /* activa flexbox */
+  justify-content: center;    /* centra en la página */
+  align-items: center;        /* alinea verticalmente */
+  gap: 20px;                  /* espacio entre video e imágenes */
+  margin: 30px 0;
+}
+
+.video-section video {
+  width: 100%;       /* ajusta el tamaño del video */
+  max-width: 400px;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0px 4px 12px rgba(0,0,0,0.2);
+}
+
+.imagenes-lado {
+  display: flex;
+  flex-direction: column;   /* pone las imágenes una debajo de otra */
+  gap: 15px;
+}
+
+.imagenes-lado img {
+  width: 100%; 
+  max-width: 225px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0px 2px 8px rgba(0,0,0,0.2);
+}
+
+/* Footer */
+.footer {
+  background: #222; 
+  color: #ffffff;
+  padding: 20px 10px;
+  text-align: center;
+}
+
+.footer-contenido {
+  display: flex;
+  flex-wrap: wrap;   /* se acomoda en mobile */
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 15px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.footer-logo h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2rem;
+  margin-bottom: 5px;
+}
+
+.footer-links p, 
+.footer-logo p {
+  margin: 5px 0;
+  font-size: 1.5rem;
+}
+
+.footer-redes a {
+  color: #fff;
+  font-size: 2rem;
+  margin: 0 10px;
+  transition: color 0.3s;
+}
+
+.footer-redes a:hover {
+  color: #ff009d; /* cambia el color al pasar el mouse */
+}
+
+.footer-copy {
+  margin-top: 20px;
+  font-size: 1rem;
+  color: #ffffff;
+}
+.footer-redes {
+  display: flex;
+  justify-content: center;  /* centra horizontalmente */
+  align-items: center;      /* centra verticalmente si hay altura */
+  gap: 15px;                /* espacio entre cada ícono */
+  margin-top: 15px;         /* separación del resto del contenido */
+}
+
+@media (max-width: 768px) {
+  header div {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .busqueda input {
+    max-width: 300px;
+  }
+
+  .video-section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .imagenes-lado img {
+    max-width: 300px;
+  }
+
+  .footer-contenido {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  h1 { 
+    font-size: 1.8rem; 
+  }
+
+  .marca { 
+    font-size: 20px; 
+  }
+
+  .footer-logo h2 {
+    font-size: 1.5rem; 
+  }
+
+  header ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+}
