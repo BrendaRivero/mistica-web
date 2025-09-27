@@ -1,0 +1,8 @@
+// ------------------ VARIABLES ------------------
+@use './utilities/variables' as *;
+
+// ------------------ GENERAL ------------------
+@use './layout/general' as *;
+
+// ------------------ MEDIA QUERIES ------------------
+@use './layout/queries' as *;
